@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+<package name="LookBook" extends="struts-default">
+<action name="ShowBookAction" class="LookBook.ShowBookAction">
+<result name="error">/LookBook/LookBook.jsp</result>
+<result name="success">/LookBook/ShowBook.jsp</result>
+</action>
+<action name="informationAction" class="LookBook.information">
+<result name="success">/LookBook/showInformation.jsp</result>
+</action>
+<action name="deleteAction" class="LookBook.deleteAction">
+<result name="success">/LookBook/LookBook.jsp</result>
+</action>
+<action name="addBook" class="AddBook.addBookAction">
+<result name="error">/AddBook/addBook.jsp</result>
+<result name="success">/AddBook/addBook.jsp</result>
+<result name="incomplete">/AddBook/addBook.jsp</result>
+<result name="noauthor">/AddBook/addAuthor.jsp</result>
+</action>
+<action name="addAuthor" class="AddBook.addAuthor">
+<result name="success">/AddBook/addBook.jsp</result>
+<result name="incomplete">/AddBook/addAuthor.jsp</result>
+</action>
+<action name="UpdateAction" class="LookBook.UpdateAction">
+<result name="success">/LookBook/Update.jsp</result>
+</action>
+<action name="Update" class="LookBook.Update">
+<result name="error">/LookBook/Update.jsp</result>
+<result name="success">/LookBook/LookBook.jsp</result>
+</action>
+</package>
+</struts>    
